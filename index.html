@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlumbMasters - Professional Plumbing Services</title>
+    <!-- Tailwind CSS CDN - For development/single-file use -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Optional: Customize Tailwind theme. This script must come AFTER the CDN script. -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a56db', // A strong blue for branding
+                        secondary: '#3b82f6', // A slightly lighter blue
+                        accent: '#f97316',   // A vibrant orange for highlights/CTAs
+                        darktext: '#1f2937', // Dark gray for most text
+                        lightbg: '#f9fafb',  // Light background color
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Optional: Custom styles or overrides */
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1542037101-b2b9c7b9c9f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-darktext bg-lightbg">
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-3xl font-bold tracking-wider">PlumbMasters</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-accent transition-colors duration-300">Home</a></li>
+                <li><a href="services.html" class="hover:text-accent transition-colors duration-300">Services</a></li>
+                <li><a href="contact.html" class="hover:text-accent transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-24 md:py-32 text-white relative">
+            <div class="absolute inset-0 bg-primary opacity-70"></div> <!-- Overlay for text readability -->
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                    Reliable Plumbing Services for Your Home
+                </h1>
+                <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Expert solutions for all your plumbing needs, delivered with professionalism and care.
+                </p>
+                <a href="contact.html" class="bg-accent hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:scale-105">
+                    Get a Free Estimate
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-8 text-primary">About PlumbMasters</h2>
+                <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-6">
+                    At PlumbMasters, we believe in delivering exceptional plumbing services with integrity and transparency. With over 15 years of experience serving our community, our certified technicians are dedicated to ensuring your home's plumbing system runs smoothly. From minor repairs to major installations, your satisfaction is our top priority. We're committed to providing prompt, efficient, and lasting solutions you can trust.
+                </p>
+                <a href="contact.html" class="text-secondary hover:text-accent font-semibold inline-flex items-center">
+                    Learn More About Us
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Key Services Section -->
+        <section class="py-16 bg-lightbg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-primary">Our Key Plumbing Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                        <div class="text-5xl text-accent mb-4">💧</div> <!-- Icon placeholder -->
+                        <h3 class="text-2xl font-semibold mb-3 text-secondary">Emergency Leak Repair</h3>
+                        <p class="text-gray-700">Rapid response and effective solutions for all types of plumbing leaks, day or night.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                        <div class="text-5xl text-accent mb-4">🚿</div> <!-- Icon placeholder -->
+                        <h3 class="text-2xl font-semibold mb-3 text-secondary">Drain Cleaning & Unclogging</h3>
+                        <p class="text-gray-700">Advanced techniques to clear stubborn clogs and restore proper drainage.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                        <div class="text-5xl text-accent mb-4">🔥</div> <!-- Icon placeholder -->
+                        <h3 class="text-2xl font-semibold mb-3 text-secondary">Water Heater Installation & Repair</h3>
+                        <p class="text-gray-700">Expert service for traditional and tankless water heaters, ensuring hot water availability.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                        <div class="text-5xl text-accent mb-4">🚽</div> <!-- Icon placeholder -->
+                        <h3 class="text-2xl font-semibold mb-3 text-secondary">Toilet Repair & Installation</h3>
+                        <p class="text-gray-700">From running toilets to new installations, we handle all your toilet needs.</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                        <div class="text-5xl text-accent mb-4">🔧</div> <!-- Icon placeholder -->
+                        <h3 class="text-2xl font-semibold mb-3 text-secondary">Pipe Repair & Repiping</h3>
+                        <p class="text-gray-700">Comprehensive solutions for damaged or corroded pipes, including full home repiping.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                        <div class="text-5xl text-accent mb-4">🔎</div> <!-- Icon placeholder -->
+                        <h3 class="text-2xl font-semibold mb-3 text-secondary">Fixture Installation</h3>
+                        <p class="text-gray-700">Professional installation of new faucets, sinks, showers, and other plumbing fixtures.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="services.html" class="bg-secondary hover:bg-primary text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+                        View All Services
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-darktext text-white py-10">
+        <div class="container mx-auto px-6 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm">&copy; 2023 PlumbMasters. All rights reserved.</p>
+            <ul class="flex space-x-6 mt-4 md:mt-0 justify-center">
+                <li><a href="index.html" class="hover:text-accent transition-colors duration-300">Home</a></li>
+                <li><a href="services.html" class="hover:text-accent transition-colors duration-300">Services</a></li>
+                <li><a href="contact.html" class="hover:text-accent transition-colors duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
+```

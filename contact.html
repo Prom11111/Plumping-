@@ -1,0 +1,144 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HydroFlow Plumbing</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Optional: Google Fonts for a professional look, if desired. Tailwind uses a sensible default. -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> -->
+    <style>
+        /* Custom styles for the body to ensure full height and a base font color */
+        body {
+            @apply font-sans text-gray-800; /* Uses Tailwind's default sans-serif font stack */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- Header/Navigation Bar -->
+    <header class="bg-blue-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-extrabold mb-2 md:mb-0 hover:text-blue-200 transition duration-300">HydroFlow Plumbing</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-lg hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="services.html" class="text-lg hover:text-blue-200 transition duration-300">Services</a></li>
+                    <li><a href="contact.html" class="text-lg text-blue-200 font-semibold cursor-default">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto p-6 md:p-8 lg:p-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-10 mt-6">Contact HydroFlow Plumbing</h1>
+
+        <section class="grid md:grid-cols-2 gap-10 lg:gap-16 mb-12">
+            <!-- Contact Information Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6">Get In Touch</h2>
+                <p class="text-lg mb-4 text-gray-700">
+                    Have a plumbing emergency, need a routine check-up, or want a free quote?
+                    Don't hesitate to reach out to our friendly team!
+                </p>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Phone Number</h3>
+                    <p class="text-2xl text-gray-700 font-mono">
+                        <a href="tel:+15551234567" class="text-blue-600 hover:underline">(555) 123-4567</a>
+                    </p>
+                    <p class="text-gray-600 mt-1">Our emergency line is available 24/7.</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Email Address</h3>
+                    <p class="text-xl text-gray-700 font-mono">
+                        <a href="mailto:info@hydroflowplumbing.com" class="text-blue-600 hover:underline">info@hydroflowplumbing.com</a>
+                    </p>
+                    <p class="text-gray-600 mt-1">We aim to respond to all emails within 1 business day.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Office Hours</h3>
+                    <p class="text-gray-700">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p class="text-gray-700">Saturday: 9:00 AM - 1:00 PM</p>
+                    <p class="text-gray-700">Sunday: Closed (Emergency service always available)</p>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6">Send Us a Message</h2>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe"
+                               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-base">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john.doe@example.com"
+                               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-base">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567"
+                               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-base">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">How can we help you?</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Describe your plumbing needs..."
+                                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-base"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                                class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Service Area Map Section -->
+        <section class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">Our Service Area</h2>
+            <p class="text-center text-lg text-gray-700 mb-6">
+                We proudly serve the Greater Anytown area and its surrounding communities.
+                See our general service zone on the map below:
+            </p>
+            <div class="relative overflow-hidden rounded-lg shadow-md aspect-video">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151240.23126781256!2d-74.15655706591789!3d40.71077558667503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700445585098!5m2!1sen!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="absolute inset-0 w-full h-full">
+                </iframe>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-4">
+                Note: This map indicates our general service region. Please call for specific address confirmation or if you are just outside this area.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white p-6 text-center shadow-inner mt-auto">
+        <div class="container mx-auto">
+            <p>&copy; 2023 HydroFlow Plumbing. All rights reserved.</p>
+            <p class="mt-2 text-sm">
+                <a href="#" class="hover:underline mx-2">Privacy Policy</a> | 
+                <a href="#" class="hover:underline mx-2">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
